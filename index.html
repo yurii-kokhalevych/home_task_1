@@ -3,9 +3,17 @@
     <head>
         <meta charset="utf-8">
         <title>Mountain</title>
+        <script>
+        function c() {
+        var c = document.getElementById("smlRectangle");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "green";
+        ctx.fillRect(0, 0, 80, 100);
+}
+</script>
     </head>
-    <body>
-        <h1><i>Mountain</i></h1>
+    <body onload="c()">
+        <h1><center><i>Mountain</i></center></h1>
         <hr>
         <p>A mountain is a large landform that stretches above the surrounding 
         land in a limited area, usually in the form of a peak. A mountain is 
@@ -23,9 +31,36 @@
         <b>Himalayas of Asia</b>, whose summit is 8,850 m <small>(29,035 ft)</small> above mean sea 
         level. The highest known mountain on any planet in the Solar System is 
         <em>Olympus Mons on Mars</em> at 21,171 m <small>(69,459 ft)</small>.</p>
-        <img src="\picture 1.jpg" alt="picture" style="width:400px; height:400px">
-        <a href="https://www.britannica.com/place/Himalayas">Himalayas</a>
-        <img src="\picture 2.jpg" alt="picture" style="width:400px; height:400px">
-        <a href="https://en.wikipedia.org/wiki/Andes">Andes</a>
+            <figure>
+                <center><img src="\picture 1.jpg" alt="picture" style="width:400px; height:400px"></center>
+                    <figcaption><center><a href="https://www.britannica.com/place/Himalayas">Himalayas</a></center></figcaption>
+            </figure>
+        <br>
+            <figure>
+                <center><img src="\picture 2.jpg" alt="picture" style="width:400px; height:400px"></center>
+                    <figcaption><center><a href="https://en.wikipedia.org/wiki/Andes">Andes</a></center></figcaption>
+            </figure>
+        <p>There are three <mark> types of mountains</mark>: <wbr> volcanic, fold, and block.<wbr>
+        All three types are formed from plate tectonics: when portions of the 
+        Earth's crust move, crumple, and dive. Compressional forces, isostatic 
+        uplift and intrusion of igneous matter forces surface rock upward, 
+        creating a landform higher than the surrounding features. The height of 
+        the feature makes it either a hill or, if higher and steeper, a mountain. 
+        Major mountains tend to occur in long linear arcs, indicating tectonic 
+        plate boundaries and activity.</p>
+        <p><big>Working time </big><time>22.00</time></p>
+            <br>
+            <center><video width="320" height="240" controls>
+                <source src="Merlot.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video></center>
+            <br>
+            <center><audio src="soude.mp3" controls="controls">
+            </audio></center>
+            <br>
+            <canvas id="smlRectangle" height="200" width="400"></canvas>
+            <svg width="200" height="200">
+                  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="6" fill="yellow" />
+            </svg>
     </body>
 </html>
